@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var thuchanh27_1 = require("./thuchanh27");
+var thuchanh271_1 = require("./thuchanh271");
+var book1 = new thuchanh27_1.Book('B001', 'Lập trình Java');
+var book2 = new thuchanh27_1.Book('B002', 'Lập trình PHP');
+var book3 = new thuchanh27_1.Book('B003', 'Lập trình TypeScript');
+var bookManager = new thuchanh271_1.BookManager();
+bookManager.add(book1);
+bookManager.add(book2);
+bookManager.add(book3);
+bookManager.update('B003', 'lập trình MySQL');
+console.log(bookManager.getList());
