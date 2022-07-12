@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var thuchanh33_1 = require("./thuchanh33");
+var thuchanh331_1 = require("./thuchanh331");
+var laptop = new thuchanh33_1.Product("Laptop", 20000);
+var iphone = new thuchanh33_1.Product("Iphone", 10000);
+var productManager = new thuchanh331_1.ProductManager();
+productManager.add(laptop);
+productManager.add(iphone);
+console.log(productManager.getAll());
